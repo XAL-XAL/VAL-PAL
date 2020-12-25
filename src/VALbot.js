@@ -9,7 +9,7 @@ const cheerio = require('cheerio');
 
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
-    bot.user.setActivity
+ 
 });
 
 
