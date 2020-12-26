@@ -1,5 +1,5 @@
 require('dotenv').config();
-const Discord = require ('Discord.js');
+const Discord = require ('discord.js');
 const client = new Discord.Client();
 const PREFIX = "*"
 
