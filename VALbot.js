@@ -162,7 +162,7 @@ client.on('message', (message) =>{
     .addFields(
        // { name: '\u200B', value: '\u200B' },
 		{ name: ':robot:  BOT Commands', value: '\u200B' },
-		{ name: '*stats Name#Tag', value: 'Displays All Competitive Stats', inline: true },
+		{ name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
         { name: '*help Name#Tag',  value: 'Displays BOT Commands', inline: true },
