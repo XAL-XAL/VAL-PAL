@@ -2,7 +2,7 @@
   "name": "VALBOT",
   "version": "1.0.0",
   "description": "",
-  "main": "VALbot.js",
+  "main": "index.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
     "discord.js": "^12.5.1",
