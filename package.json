@@ -2,7 +2,7 @@
   "name": "VALBOT",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "VALbot.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
     "discord.js": "^12.5.1",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node VALbot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
