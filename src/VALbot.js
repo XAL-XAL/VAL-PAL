@@ -144,7 +144,7 @@ client.on('message', (message) =>{
     const printHelp = new Discord.MessageEmbed()
     
     .setColor('#0099ff')
-	.setTitle('How to use VAL BOT')
+	.setTitle('How to use VAL PAL')
 	//.setURL('https://discord.js.org/')
 	.setAuthor('*help', 'https://files.cults3d.com/uploaders/15024335/illustration-file/a86d53e4-2bd9-4a8f-9550-986686c3131a/gi0mAjIh_400x400_large.png')
     .setDescription(`In order for this BOT to access and display your stats...
