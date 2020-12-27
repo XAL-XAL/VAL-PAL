@@ -174,7 +174,7 @@ client.on('message', (message) =>{
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
-	.setFooter('Please contact XAL if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('Please contact XAL#7777 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
 
     message.channel.send(printHelp);
 
