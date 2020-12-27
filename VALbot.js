@@ -9,7 +9,8 @@ const cheerio = require('cheerio');
 
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
- 
+    client.user.setActivity(`${client.guilds.cache.size} servers!`, { type: 'WATCHING' });
+    
 });
 
 
@@ -268,6 +269,9 @@ client.on('message', (message) =>{
         message.reply('Your profile is private. Please use *help to resolve this issue');
     });
 }
+
+
+//-------------------------------------------------------------------------------------------------------------------
 
 
 //-------------------------------------------------------------------------------------------------------------------
