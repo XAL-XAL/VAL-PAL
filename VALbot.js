@@ -16,6 +16,7 @@ client.on('ready', () =>{
 client.on('message', (message) =>{
     if (!message.content.startsWith(PREFIX) || message.author.bot) return;
 
+    
     const args = message.content.slice(PREFIX.length).trim().split(' ');
     const command = args.shift().toLowerCase();
 
@@ -38,8 +39,12 @@ client.on('message', (message) =>{
         {
              const $ = cheerio.load(body); 
             
+             const profile = $('.lead');
+            if(profile === 'This profile is private.')
+            return message.channel.send(`Your profile is private, ${message.author}! Use *help to resolve this issue!`);
+
              //GET RANK
-            const rank = $('.valorant-rank-icon').attr('src');
+             const rank = $('.valorant-rank-icon').attr('src');
 
             //GET STATS
             var stats = [];
