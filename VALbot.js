@@ -131,7 +131,7 @@ client.on('message', (message) =>{
             
             
             printStats.setTimestamp()
-	        .setFooter('NOTE: All stats are solely Competetive' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+	        .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             
             
             message.channel.send(printStats);//Print Embed
@@ -208,6 +208,7 @@ client.on('message', (message) =>{
             .setThumbnail($('.valorant-rank-icon').first().attr('src'))//RANK ICON
 
             printRank.setTimestamp()
+            .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             message.channel.send(printRank);
     
         }
@@ -261,7 +262,7 @@ client.on('message', (message) =>{
                  )
 
                  printKDA.setTimestamp()
-                 .setFooter('NOTE: All stats are solely Competetive' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+                 .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
                 
                  message.channel.send(printKDA);
 
@@ -274,9 +275,37 @@ client.on('message', (message) =>{
 
 
 //-------------------------------------------------------------------------------------------------------------------
+else if(command === "about"){
+
+    const printAbout = new Discord.MessageEmbed()
+    
+    .setColor('#0099ff')
+	.setTitle('About VAL PAL and the Developers')
+	.setURL('https://discord.gg/46XQpv78')
+	.setAuthor('*about', 'https://files.cults3d.com/uploaders/15024335/illustration-file/a86d53e4-2bd9-4a8f-9550-986686c3131a/gi0mAjIh_400x400_large.png')
+    .setDescription(`VAL PAL was created by XAL#7777 with an insane amount of help from my friend jtsshieh. After constantly opening up a web browser
+    to check my stats and screenshot it to show my friends, I decided that I wanted to create a bot where stats would be easily accessible and sharable to your Discord friends. And this is the result!
+     This is the first bot I have ever created so there might be
+    a couple bumps and hiccups along the road. Feel free to criticize it and let me know what you think!
+
+    Here is a link to the VAL PAL Discord: https://discord.gg/46XQpv78
+    - XAL `)
+	.setThumbnail('https://i.imgur.com/JOB50TZ.jpg')
+	.setTimestamp()
+	.setFooter('Please contact XAL#7777 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+
+    message.channel.send(printAbout);
+}
+//-------------------------------------------------------------------------------------------------------------------
+
 else if(command === "count")
 {
     message.channel.send("The stats command has been used " + count + " times!");
+}
+//-------------------------------------------------------------------------------------------------------------------
+else if(command === "invite")
+{
+    message.reply("Here is your invite link: https://discord.com/oauth2/authorize?client_id=789320714955522068&scope=bot&permissions=183296")
 }
 //-------------------------------------------------------------------------------------------------------------------
     else{
