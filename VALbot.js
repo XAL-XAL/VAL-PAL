@@ -39,10 +39,9 @@ client.on('message', (message) =>{
         {
              const $ = cheerio.load(body); 
             
-             const profile = $('.lead').text();
-
-            if(profile === 'This profile is private.')
-            return message.channel.send(`Your profile is private, ${message.author}! Use *help to resolve this issue!`);
+             
+             if ($('.lead').text() === "This profile is private.") 
+             return loading.edit(`Your profile is private, ${message.author}! Use *help to resolve this issue!`);
 
              //GET RANK
              const rank = $('.valorant-rank-icon').attr('src');
