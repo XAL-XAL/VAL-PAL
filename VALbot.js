@@ -34,7 +34,7 @@ client.on('message', (message) =>{
     console.log(tag_number);
     console.log("\n");
 
-    request(`https://tracker.gg/valorant/profile/riot/${user_name}%23${tag_number}/overview?playlist=competitive`, function(err, resp, body){
+    request(`https://tracker.gg/valorant/profile/riot/${encodeURI(user_name)}%23${encodeURI(tag_number)}/overview?playlist=competitive`, function(err, resp, body){
         if(!err && resp.statusCode == 200)
         {
              const $ = cheerio.load(body); 
@@ -169,7 +169,7 @@ client.on('message', (message) =>{
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
         { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '\u200B', value: '\u200B' },
-        { name: ':warning:  Ongoing fixes', value: '- Fixing profiles with special characters'},
+        { name: ':warning:  Ongoing fixes', value: 'FIXED Profiles with special characters(thanks jtssieh)'},
         { name: '\u200B', value: '\u200B' }
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
