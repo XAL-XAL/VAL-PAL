@@ -165,12 +165,14 @@ client.on('message', (message) =>{
 
     .addFields(
        // { name: '\u200B', value: '\u200B' },
-		{ name: ':robot:  BOT Commands', value: '\u200B' },
-		{ name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
+        { name: ':robot:  BOT Commands', value: '\u200B' },
+        { name: '*help',  value: 'Displays BOT Commands', inline: true },
+        { name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
-        { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '*count',  value: 'See how many times players checked their stats!', inline: true },
+        { name: '*servers',  value: 'See how many servers VAL PAL is serving!', inline: true },
+        { name: '*invite',  value: 'Get an invite link for this BOT!', inline: true },
         { name: '\u200B', value: '\u200B' },
         { name: ':warning:  Ongoing fixes', value: 'FIXED Profiles with special characters(thanks jtssieh)'},
         { name: '\u200B', value: '\u200B' }
