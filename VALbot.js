@@ -39,12 +39,8 @@ client.on('message', (message) =>{
         {
              const $ = cheerio.load(body); 
             
-             
-             if ($('.lead').text() === "This profile is private.") 
-             return loading.edit(`Your profile is private, ${message.author}! Use *help to resolve this issue!`);
-
              //GET RANK
-             const rank = $('.valorant-rank-icon').attr('src');
+            const rank = $('.valorant-rank-icon').attr('src');
 
             //GET STATS
             var stats = [];
@@ -61,9 +57,8 @@ client.on('message', (message) =>{
         });
 
 
-            const printStats = new Discord.MessageEmbed()
-
             
+        const printStats = new Discord.MessageEmbed()    
             .setTitle('RANK') //RANK
             .setDescription($('.valorant-highlighted-stat__value').first().text().toUpperCase()) //RANK NAME
             .setAuthor( $('.trn-ign__username').first().text() + $('.trn-ign__discriminator').first().text(),//USERNAME & TAG
@@ -140,6 +135,8 @@ client.on('message', (message) =>{
             message.channel.send(printStats);//Print Embed
             
         }
+        else    
+        message.reply('Your prifile is provate. Please use *help to resolve this issue');
 
     });
     }
@@ -211,6 +208,8 @@ client.on('message', (message) =>{
             message.channel.send(printRank);
     
         }
+        else
+        message.reply('Your prifile is provate. Please use *help to resolve this issue');
     });
     
     }
@@ -265,6 +264,8 @@ client.on('message', (message) =>{
 
 
         }
+        else
+        message.reply('Your prifile is provate. Please use *help to resolve this issue');
     });
 }
 
