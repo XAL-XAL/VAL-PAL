@@ -169,7 +169,7 @@ client.on('message', (message) =>{
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
         { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '\u200B', value: '\u200B' },
-        { name: ':warning:  Ongoing fixes', value: '- Error catching for private/unfound profiles'},
+        { name: ':warning:  Ongoing fixes', value: '- Fixing profiles with special characters'},
         { name: '\u200B', value: '\u200B' }
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
