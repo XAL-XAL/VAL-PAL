@@ -21,7 +21,7 @@ client.on('message', (message) =>{
 
     
     if (command === 'stats'){
-        const [user_name, tag_number] = args[0].split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
+        const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
       if (!args.length) {
@@ -165,7 +165,7 @@ client.on('message', (message) =>{
 		{ name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
-        { name: '*help Name#Tag',  value: 'Displays BOT Commands', inline: true },
+        { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '\u200B', value: '\u200B' },
         { name: ':warning:  Ongoing fixes', value: '- Error catching for private/unfound profiles'},
         { name: '\u200B', value: '\u200B' }
