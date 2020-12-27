@@ -170,6 +170,7 @@ client.on('message', (message) =>{
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
         { name: '*help',  value: 'Displays BOT Commands', inline: true },
+        { name: '*count',  value: 'See how many times players checked their stats!', inline: true },
         { name: '\u200B', value: '\u200B' },
         { name: ':warning:  Ongoing fixes', value: 'FIXED Profiles with special characters(thanks jtssieh)'},
         { name: '\u200B', value: '\u200B' }
