@@ -5,7 +5,7 @@ const PREFIX = "*"
 
 const request = require('request');
 const cheerio = require('cheerio');
-
+var count = 0;
 
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
@@ -23,6 +23,7 @@ client.on('message', (message) =>{
 
     
     if (command === 'stats'){
+        count++;
         const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
@@ -272,8 +273,10 @@ client.on('message', (message) =>{
 
 
 //-------------------------------------------------------------------------------------------------------------------
-
-
+else if(command === "count")
+{
+    message.channel.send("The stats command has been used " + count + " times!");
+}
 //-------------------------------------------------------------------------------------------------------------------
     else{
     message.reply("That is an invalid command");
