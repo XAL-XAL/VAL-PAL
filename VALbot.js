@@ -9,7 +9,7 @@ var count = 0;
 
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
-    client.user.setActivity(`${client.guilds.cache.size} servers!`, { type: 'WATCHING' });
+    client.user.setActivity(`Your stats!`, { type: 'WATCHING' });
     
 });
 
@@ -300,12 +300,17 @@ else if(command === "about"){
 
 else if(command === "count")
 {
-    message.channel.send("The stats command has been used " + count + " times!");
+    message.channel.send("The stats command has been used " + count + " times since the last update!");
 }
 //-------------------------------------------------------------------------------------------------------------------
 else if(command === "invite")
 {
     message.reply("Here is your invite link: https://discord.com/oauth2/authorize?client_id=789320714955522068&scope=bot&permissions=183296")
+}
+//-------------------------------------------------------------------------------------------------------------------
+else if(command === "servers")
+{
+    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers!`);
 }
 //-------------------------------------------------------------------------------------------------------------------
     else{
