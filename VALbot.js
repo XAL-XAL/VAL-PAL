@@ -334,9 +334,22 @@ else if(command === "servers")
     message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers! MAX CAPACITY!! Will update you guys when more server slots are availiable :)`);
 }
 //-------------------------------------------------------------------------------------------------------------------
-    else{
+//-------------------------------------------------------------------------------------------------------------------
+else if (command === 'zservers'){
+    let serverlist = ''
+    client.guilds.cache.forEach((guild) => {
+        serverlist = serverlist.concat(" - " + guild.name + ": ID: " + guild.id + "\n")
+    })
+    const embed = new Discord.MessageEmbed()
+        .setColor("RANDOM")
+        .setTitle("Servers that have VAL PAL BOT", '')
+        .setDescription(serverlist)
+        message.channel.send({embed});
+}
+//-------------------------------------------------------------------------------------------------------------------
+else{
     message.reply("That is an invalid command");
-    }
+ }
 
 
 
