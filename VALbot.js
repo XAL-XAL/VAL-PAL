@@ -132,7 +132,7 @@ client.on('message', (message) =>{
             
             
             printStats.setTimestamp()
-	        .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+	        .setFooter('BOT INVITES ARE CAPPED! READ HELP!' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             
             
             message.channel.send(printStats);//Print Embed
@@ -180,7 +180,9 @@ client.on('message', (message) =>{
         { name: '*servers',  value: 'See how many servers VAL PAL is serving!', inline: true },
         { name: '*invite',  value: 'Get an invite link for this BOT!', inline: true },
         { name: '\u200B', value: '\u200B' },
-        { name: ':warning:  Ongoing fixes', value: 'FIXED Profiles with special characters(thanks jtssieh)'},
+        { name: ':warning:  Ongoing fixes', value: `I HAVE REACHED A CAP OF 250 SERVERS FOR THIS BOT. THE SUPPORT AND REQUESTS FOR THIS BOT ARE INSANE AND VERY APPRECIATED.
+                UNFORTUNATELY, I WILL HAVE TO WAIT A COUPLE WEEKS BEFORE DISCORD OPENS UP MORE SERVER SLOTS FOR YOU GUYS. PLEASE LET EVERYONE KNOW. I WILL TRY AND KEEP YOU ALL UPDATED.
+                  FOR THOSE OF YOU WHO HAVE THE BOT, THANK YOU FOR THE TREMENDOUS SUPPORT. ONCE DISCORD GETS BACK TO ME I WILL NOTIFY ALL OF YOU OF OPEN SLOTS!! THANK YOU GUYS SO MUCH` },
         { name: '\u200B', value: '\u200B' }
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
@@ -216,7 +218,7 @@ client.on('message', (message) =>{
             .setThumbnail($('.valorant-rank-icon').first().attr('src'))//RANK ICON
 
             printRank.setTimestamp()
-            .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+            .setFooter('BOT INVITES ARE CAPPED! READ HELP!' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             message.channel.send(printRank);
     
         }
@@ -275,7 +277,7 @@ client.on('message', (message) =>{
                  )
 
                  printKDA.setTimestamp()
-                 .setFooter('Discord: https://discord.gg/46XQpv78' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+                 .setFooter('BOT INVITES ARE CAPPED! READ *HELP !' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
                 
                  message.channel.send(printKDA);
 
