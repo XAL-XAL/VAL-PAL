@@ -23,6 +23,7 @@ client.on('message', (message) =>{
 
     
     if (command === 'stats'){
+        try{
         count++;
         const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
@@ -142,6 +143,11 @@ client.on('message', (message) =>{
 
     });
     }
+    catch{
+        message.reply("something went wrong(devs will look into this)");
+        console.log("something went wrong(devs will look into this)");
+    }
+}
 //---------------------------------------------------------------------------------------------------------------------
     else if(command === "help"){// *help command
 
@@ -187,7 +193,7 @@ client.on('message', (message) =>{
 
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "rank"){
-        
+        try{
         const [user_name, tag_number] = args[0].split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
 
         console.log(`Command name: ${command}\nArgument(s): ${args}`)
@@ -217,10 +223,15 @@ client.on('message', (message) =>{
         else
         message.reply('Your profile is private. Please use *help to resolve this issue');
     });
-    
     }
+    catch{
+        message.reply("something went wrong(devs will look into this)");
+        console.log("something went wrong(devs will look into this)");
+    }
+}
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "kda"){
+        try{
         const [user_name, tag_number] = args[0].split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
@@ -273,6 +284,11 @@ client.on('message', (message) =>{
         else
         message.reply('Your profile is private. Please use *help to resolve this issue');
     });
+    }
+    catch{
+        message.reply("something went wrong(devs will look into this)");
+        console.log("something went wrong(devs will look into this)");
+    }
 }
 
 
