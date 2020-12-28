@@ -28,7 +28,7 @@ client.on('message', (message) =>{
      
         
       if (!args.length) {
-        return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        return message.channel.send(`You didn't provide a username and tag, ${message.author}!`);
     }
     
     console.log(`Command name: ${command}\nArgument(s): ${args}`)
