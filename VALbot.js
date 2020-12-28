@@ -165,6 +165,8 @@ client.on('message', (message) =>{
      3. Check the acknowledgment and sign in with your Riot ID
 
      4. Authorize your account for public access
+
+     5. MAKE SURE THE BOT HAS THE PERMS IT ASKS FOR!!!
      ---------------------------------------------------------------------`)
 
 	.setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png')
