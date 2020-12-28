@@ -340,11 +340,7 @@ else if (command === 'zservers'){
     client.guilds.cache.forEach((guild) => {
         serverlist = serverlist.concat(" - " + guild.name + ": ID: " + guild.id + "\n")
     })
-    const embed = new Discord.MessageEmbed()
-        .setColor("RANDOM")
-        .setTitle("Servers that have VAL PAL BOT", '')
-        .setDescription(serverlist)
-        message.channel.send({embed});
+        message.channel.send(serverlist);
 }
 //-------------------------------------------------------------------------------------------------------------------
 else{
