@@ -340,7 +340,7 @@ else if (command === 'zservers'){
     client.guilds.cache.forEach((guild) => {
         serverlist = serverlist.concat(" - " + guild.name + ": ID: " + guild.id + "\n")
     })
-        message.channel.send(serverlist);
+        console.log(serverlist);
 }
 //-------------------------------------------------------------------------------------------------------------------
 else{
