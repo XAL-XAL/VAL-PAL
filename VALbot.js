@@ -10,7 +10,6 @@ var count = 0;
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
     client.user.setActivity(`Your stats!`, { type: 'WATCHING' });
-    
 });
 
 
@@ -332,7 +331,7 @@ else if(command === "invite")
 //-------------------------------------------------------------------------------------------------------------------
 else if(command === "servers")
 {
-    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers!`);
+    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers! MAX CAPACITY!! Will update you guys when more server slots are availiable :)`);
 }
 //-------------------------------------------------------------------------------------------------------------------
     else{
