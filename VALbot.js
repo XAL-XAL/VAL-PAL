@@ -335,7 +335,7 @@ else if(command === "servers")
 }
 //-------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------
-else if (command === 'zservers'){
+else if (command === 'serverNames'){
     let serverlist = ''
     client.guilds.cache.forEach((guild) => {
         serverlist = serverlist.concat(" - " + guild.name + ": ID: " + guild.id + "\n")
@@ -346,8 +346,6 @@ else if (command === 'zservers'){
 else{
     message.reply("That is an invalid command");
  }
-
-
 
 });
 
