@@ -174,13 +174,13 @@ client.on('message', (message) =>{
     .addFields(
        // { name: '\u200B', value: '\u200B' },
         { name: ':robot:  BOT Commands', value: '\u200B' },
-        { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
         { name: '*count',  value: 'See how many times players checked their stats!', inline: true },
         { name: '*servers',  value: 'See how many servers VAL PAL is serving!', inline: true },
         { name: '*invite',  value: 'Get an invite link for this BOT!', inline: true },
+        { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '\u200B', value: '\u200B' },
         { name: ':warning:  Ongoing fixes', value: `I HAVE REACHED A CAP OF 250 SERVERS FOR THIS BOT. THE SUPPORT AND REQUESTS FOR THIS BOT ARE INSANE AND VERY APPRECIATED.
                 UNFORTUNATELY, I WILL HAVE TO WAIT A COUPLE WEEKS BEFORE DISCORD OPENS UP MORE SERVER SLOTS FOR YOU GUYS. PLEASE LET EVERYONE KNOW. I WILL TRY AND KEEP YOU ALL UPDATED.
