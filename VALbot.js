@@ -194,7 +194,7 @@ client.on('message', (message) =>{
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "rank"){
         try{
-        const [user_name, tag_number] = args[0].split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
+            const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
 
         console.log(`Command name: ${command}\nArgument(s): ${args}`)
         console.log(user_name);
@@ -232,7 +232,7 @@ client.on('message', (message) =>{
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "kda"){
         try{
-        const [user_name, tag_number] = args[0].split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
+            const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
       if (!args.length) {
