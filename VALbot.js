@@ -5,7 +5,9 @@ const PREFIX = "*"
 
 const request = require('request');
 const cheerio = require('cheerio');
-var count = 0;
+var countStats = 0;
+var countRank = 0;
+var countKDA = 0;
 
 client.on('ready', () =>{
     console.log(`${client.user.tag} has logged in`);
@@ -18,12 +20,12 @@ client.on('message', (message) =>{
 
     
     const args = message.content.slice(PREFIX.length).trim().split(' ');
-    const command = args.shift().toLowerCase();
+    const command = args.shift();
 
     
     if (command === 'stats'){
         try{
-        count++;
+        countStats++;
         const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
@@ -176,7 +178,7 @@ client.on('message', (message) =>{
         { name: '*stats Name#Tag', value: 'Displays All Competitive Stats and TOP AGENT', inline: true },
         { name: '*rank Name#Tag',  value: 'Displays Rank', inline: true },
         { name: '*kda Name#Tag',   value: 'Displays K/DA info', inline: true },
-        { name: '*count',  value: 'See how many times players checked their stats!', inline: true },
+        { name: '*countStats',  value: 'See how many times players checked their stats!', inline: true },
         { name: '*servers',  value: 'See how many servers VAL PAL is serving!', inline: true },
         { name: '*invite',  value: 'Get an invite link for this BOT!', inline: true },
         { name: '*help',  value: 'Displays BOT Commands', inline: true },
@@ -197,6 +199,7 @@ client.on('message', (message) =>{
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "rank"){
         try{
+            countRank++;
             const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
 
             if (!args.length) {
@@ -239,6 +242,7 @@ client.on('message', (message) =>{
 //-------------------------------------------------------------------------------------------------------------------
     else if(command === "kda"){
         try{
+            countKDA++;
             const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
      
         
@@ -323,9 +327,19 @@ else if(command === "about"){
 }
 //-------------------------------------------------------------------------------------------------------------------
 
-else if(command === "count")
+else if(command === "countStats")
 {
-    message.channel.send("The stats command has been used " + count + " times since the last update!");
+    message.channel.send("The stats command has been used " + countStats + " times since the last update!");
+}
+//-------------------------------------------------------------------------------------------------------------------
+else if(command === "countRank")
+{
+    message.channel.send("The stats command has been used " + countRank + " times since the last update!");
+}
+//-------------------------------------------------------------------------------------------------------------------
+else if(command === "countKDA")
+{
+    message.channel.send("The stats command has been used " + countKDA + " times since the last update!");
 }
 //-------------------------------------------------------------------------------------------------------------------
 else if(command === "invite")
