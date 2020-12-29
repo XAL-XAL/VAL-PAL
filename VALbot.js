@@ -199,6 +199,10 @@ client.on('message', (message) =>{
         try{
             const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
 
+            if (!args.length) {
+                return message.channel.send(`You didn't provide a username and tag, ${message.author}!`);
+            }
+            
         console.log(`Command name: ${command}\nArgument(s): ${args}`)
         console.log(user_name);
         console.log(tag_number);
