@@ -140,7 +140,7 @@ client.on('message', (message) =>{
             
         }
         else    
-        message.reply('Your profile is private. Please use *help to resolve this issue');
+        message.reply('Your profile is either private or your userName#Tag is incorrect. Please use *help to resolve this issue');
 
     });
     }
@@ -231,7 +231,7 @@ client.on('message', (message) =>{
     
         }
         else
-        message.reply('Your profile is private. Please use *help to resolve this issue');
+        message.reply('Your profile is either private or your userName#Tag is incorrect. Please use *help to resolve this issue');
     });
     }
     catch{
@@ -293,7 +293,7 @@ client.on('message', (message) =>{
 
         }
         else
-        message.reply('Your profile is private. Please use *help to resolve this issue');
+        message.reply('Your profile is either private or your userName#Tag is incorrect. Please use *help to resolve this issue');
     });
     }
     catch{
