@@ -190,7 +190,7 @@ client.on('message', (message) =>{
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
-	.setFooter('Please contact XAL#7777 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('Please contact XAL#7478 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
 
     message.channel.send(printHelp);
 
@@ -312,7 +312,7 @@ else if(command === "about"){
 	.setTitle('About VAL PAL and the Developers')
 	.setURL('https://discord.gg/46XQpv78')
 	.setAuthor('*about', 'https://files.cults3d.com/uploaders/15024335/illustration-file/a86d53e4-2bd9-4a8f-9550-986686c3131a/gi0mAjIh_400x400_large.png')
-    .setDescription(`VAL PAL was created by XAL#7777 with an insane amount of help from my friend jtsshieh. After constantly opening up a web browser
+    .setDescription(`VAL PAL was created by XAL#7478 with an insane amount of help from my friend jtsshieh. After constantly opening up a web browser
     to check my stats and screenshot it to show my friends, I decided that I wanted to create a bot where stats would be easily accessible and sharable to your Discord friends. And this is the result!
      This is the first bot I have ever created so there might be
     a couple bumps and hiccups along the road. Feel free to criticize it and let me know what you think!
@@ -321,7 +321,7 @@ else if(command === "about"){
     - XAL `)
 	.setThumbnail('https://i.imgur.com/JOB50TZ.jpg')
 	.setTimestamp()
-	.setFooter('Please contact XAL#7777 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('Please contact XAL#7478 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
 
     message.channel.send(printAbout);
 }
