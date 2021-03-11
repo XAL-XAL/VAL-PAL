@@ -8,21 +8,21 @@ Displays a list of all commands availiable
 
 ---
 
-### *stats
+### *stats name#tag (ie. player#NA1)
 Displays overall Valorant competitive stats\
 
 ![Screenshot 2021-03-11 153458](https://user-images.githubusercontent.com/76600155/110869786-ffdc0980-827f-11eb-81e2-cf568727c84d.png)
 
 ---
 
-### *rank
+### *rank name#tag
 Displays Valorant rank 
 
 ![Screenshot 2021-03-11 153617](https://user-images.githubusercontent.com/76600155/110869935-51849400-8280-11eb-938b-15a75eab6c3c.png)
 
 ---
 
-### *kda!
+### *kda name#tag
 Displays Valorant Competitive KDA\
 
 [Screenshot 2021-03-11 153806](https://user-images.githubusercontent.com/76600155/110869971-66612780-8280-11eb-874c-3f392171b38f.png)
