@@ -16,7 +16,7 @@ Displays overall Valorant competitive stats\
 ---
 
 ### *rank name#tag
-Displays Valorant rank 
+Displays Valorant rank\
 
 ![Screenshot 2021-03-11 153617](https://user-images.githubusercontent.com/76600155/110869935-51849400-8280-11eb-938b-15a75eab6c3c.png)
 
