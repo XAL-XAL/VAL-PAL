@@ -2,7 +2,7 @@
 Discord.js Bot for tracking Valorant Stats
 
 ### *help
-displays
+displays\
 ![Screenshot 2021-03-11 153534](https://user-images.githubusercontent.com/76600155/110869876-33b72f00-8280-11eb-95c2-745c7e499366.png)
 
 ---
