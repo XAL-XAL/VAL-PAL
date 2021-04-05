@@ -133,7 +133,7 @@ client.on('message', (message) =>{
             
             
             printStats.setTimestamp()
-	        .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+	        .setFooter('VAL PAL' , 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg');//XAL LOGO
             
             
             message.channel.send(printStats);//Print Embed
@@ -170,7 +170,7 @@ client.on('message', (message) =>{
      5. MAKE SURE THE BOT HAS THE PERMS IT ASKS FOR!!!
      ---------------------------------------------------------------------`)
 
-	.setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png')
+	.setThumbnail('https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg')
 
     .addFields(
        // { name: '\u200B', value: '\u200B' },
@@ -188,7 +188,7 @@ client.on('message', (message) =>{
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
-	.setFooter('VAL PAL', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('VAL PAL', 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg');
 
     message.channel.send(printHelp);
 
@@ -224,7 +224,7 @@ client.on('message', (message) =>{
             .setThumbnail($('.valorant-rank-icon').first().attr('src'))//RANK ICON
 
             printRank.setTimestamp()
-            .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+            .setFooter('VAL PAL' , 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg');//XAL LOGO
             message.channel.send(printRank);
     
         }
@@ -284,7 +284,7 @@ client.on('message', (message) =>{
                  )
 
                  printKDA.setTimestamp()
-                 .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+                 .setFooter('VAL PAL' , 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg');//XAL LOGO
                 
                  message.channel.send(printKDA);
 
@@ -319,7 +319,7 @@ else if(command === "about"){
     - XAL `)
 	.setThumbnail('https://i.imgur.com/JOB50TZ.jpg')
 	.setTimestamp()
-	.setFooter('VAL PAL', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('VAL PAL', 'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagepngbase64iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQ-5c25ab474761c20eff12f3747706b967.jpg');
 
     message.channel.send(printAbout);
 }
