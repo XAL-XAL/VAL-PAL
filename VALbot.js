@@ -133,7 +133,7 @@ client.on('message', (message) =>{
             
             
             printStats.setTimestamp()
-	        .setFooter('BOT INVITES ARE CAPPED! READ HELP!' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+	        .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             
             
             message.channel.send(printStats);//Print Embed
@@ -183,14 +183,12 @@ client.on('message', (message) =>{
         { name: '*invite',  value: 'Get an invite link for this BOT!', inline: true },
         { name: '*help',  value: 'Displays BOT Commands', inline: true },
         { name: '\u200B', value: '\u200B' },
-        { name: ':warning:  Ongoing fixes', value: `I HAVE REACHED A CAP OF 250 SERVERS FOR THIS BOT. THE SUPPORT AND REQUESTS FOR THIS BOT ARE INSANE AND VERY APPRECIATED.
-                UNFORTUNATELY, I WILL HAVE TO WAIT A COUPLE WEEKS BEFORE DISCORD OPENS UP MORE SERVER SLOTS FOR YOU GUYS. PLEASE LET EVERYONE KNOW. I WILL TRY AND KEEP YOU ALL UPDATED.
-                  FOR THOSE OF YOU WHO HAVE THE BOT, THANK YOU FOR THE TREMENDOUS SUPPORT. ONCE DISCORD GETS BACK TO ME I WILL NOTIFY ALL OF YOU OF OPEN SLOTS!! THANK YOU GUYS SO MUCH` },
+        { name: ':warning:  Ongoing fixes', value: `Minor bugs ` },
         { name: '\u200B', value: '\u200B' }
 	    )
 //	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
-	.setFooter('Please contact XAL#7478 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('VAL PAL', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
 
     message.channel.send(printHelp);
 
@@ -226,7 +224,7 @@ client.on('message', (message) =>{
             .setThumbnail($('.valorant-rank-icon').first().attr('src'))//RANK ICON
 
             printRank.setTimestamp()
-            .setFooter('BOT INVITES ARE CAPPED! READ HELP!' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+            .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
             message.channel.send(printRank);
     
         }
@@ -286,7 +284,7 @@ client.on('message', (message) =>{
                  )
 
                  printKDA.setTimestamp()
-                 .setFooter('BOT INVITES ARE CAPPED! READ *HELP !' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
+                 .setFooter('VAL PAL' , 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');//XAL LOGO
                 
                  message.channel.send(printKDA);
 
@@ -321,7 +319,7 @@ else if(command === "about"){
     - XAL `)
 	.setThumbnail('https://i.imgur.com/JOB50TZ.jpg')
 	.setTimestamp()
-	.setFooter('Please contact XAL#7478 if there any other issues ', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
+	.setFooter('VAL PAL', 'https://lh5.googleusercontent.com/7j8XeYBmyh2FbnYNmr3Ktenb8iYwj1_ZmT-RBq_DpGOG0_gN2X8K26MGqjL8WxxLyznyyD4j=w1280');
 
     message.channel.send(printAbout);
 }
@@ -349,7 +347,7 @@ else if(command === "invite")
 //-------------------------------------------------------------------------------------------------------------------
 else if(command === "servers")
 {
-    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers! MAX CAPACITY!! Will update you guys when more server slots are availiable :)`);
+    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers!)`);
 }
 //-------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------
