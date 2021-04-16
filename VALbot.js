@@ -315,7 +315,7 @@ else if(command === "about"){
      This is the first bot I have ever created so there might be
     a couple bumps and hiccups along the road. Feel free to criticize it and let me know what you think!
 
-    Here is a link to the VAL PAL Discord: https://discord.gg/46XQpv78
+    Here is a link to the VAL PAL Discord: https://discord.gg/8gfbtQ6RBr
     - XAL `)
 	.setThumbnail('https://i.imgur.com/JOB50TZ.jpg')
 	.setTimestamp()
