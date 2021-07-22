@@ -1,6 +1,6 @@
 require('dotenv').config();
-const Discord = require ('discord.js');
-const client = new Discord.Client();
+const Discord = require ('discord.js'); //importing discord.js
+const client = new Discord.Client(); //Client is a class that allows us to work with the Discord API 
 const PREFIX = "*"
 
 const request = require('request');
@@ -14,6 +14,7 @@ client.on('ready', () =>{
     client.user.setActivity(`Your stats!`, { type: 'WATCHING' });
 });
 
+//stats apple#sauce
 
 client.on('message', (message) =>{
     if (!message.content.startsWith(PREFIX) || message.author.bot) return;
@@ -26,7 +27,7 @@ client.on('message', (message) =>{
     if (command === 'stats'){
         try{
         countStats++;
-        const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL, XAL]
+        const [user_name, tag_number] = args.join(' ').split('#'); //Splitting argument Ex: XAL#XAL [XAL,XAL]
      
         
       if (!args.length) {
@@ -59,7 +60,6 @@ client.on('message', (message) =>{
             const agent = $(el).text();
             agents.push(agent); //Push each stat into array element
         });
-
 
             
         const printStats = new Discord.MessageEmbed()    
@@ -347,7 +347,7 @@ else if(command === "invite")
 //-------------------------------------------------------------------------------------------------------------------
 else if(command === "servers")
 {
-    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers!)`);
+    message.channel.send(`This bot is currently serving ${client.guilds.cache.size} servers!`);
 }
 //-------------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------------
@@ -365,4 +365,4 @@ else{
 
 });
 
-client.login(process.env.DISCORDJS_BOT_TOKEN);
+client.login(process.env.DISCORDJS_BOT_TOKEN); //logs out Discord BOT in. Creates a connection with the Discord API
