@@ -78,6 +78,10 @@ client.on('message', (message) =>{
                 
            //DISPLAY TOP AGENT
             switch(agents[0]){
+            case "Astra":
+             printStats.setImage('https://wallpaperaccess.com/full/6773328.jpg').setColor('#06FC2B')
+                break;
+
              case "Breach":
              printStats.setImage('https://i.imgur.com/TiB6rB7.png').setColor('#FF8633')
                  break;
@@ -85,6 +89,10 @@ client.on('message', (message) =>{
              case "Brimstone":
              printStats.setImage('https://i.imgur.com/QDftK5L.png').setColor('#6C2F05')
                 break;
+
+            case "Chamber":
+             printStats.setImage('https://images.alphacoders.com/118/thumb-1920-1186644.png').setColor('#06FC2B')
+                    break;
 
              case "Cypher":
              printStats.setImage('https://i.imgur.com/xV2kRai.png').setColor('#C0B8B2')
@@ -128,6 +136,10 @@ client.on('message', (message) =>{
 
             case "Viper":
              printStats.setImage('https://i.imgur.com/cIQmfHs.png').setColor('#06FC2B')
+                break;
+                
+            case "Yoru":
+             printStats.setImage('https://preview.redd.it/2qt7xdh061b61.png?width=3840&format=png&auto=webp&s=ece0ddfce842b27b856093607fef877111aa4262').setColor('#06FC2B')
                 break;
             }
             
