@@ -39,7 +39,7 @@ client.on('message', (message) =>{
     console.log(tag_number);
     console.log("\n");
 
-    request(`https://tracker.gg/valorant/profile/riot/${encodeURI(user_name)}%23${encodeURI(tag_number)}/overview`, function(err, resp, body){
+    request(`https://tracker.gg/valorant/profile/riot/${encodeURI(user_name)}%23${encodeURI(tag_number)}/overview?playlist=competitive`, function(err, resp, body){
         if(!err && resp.statusCode == 200)
         {
              const $ = cheerio.load(body); 
