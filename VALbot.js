@@ -153,7 +153,7 @@ client.on('message', (message) =>{
             
         }
         else    
-        message.reply('Bot is under maintenance. Apologies for the inconvenience :( \n Tracker.gg seems to be cracking down on web scraping, putting my bot out of commission. My only options may be to refactor my code and utilize a different method for gathering data, or to retire the bot. Will keep you guys updated!');
+        message.reply('Bot is under maintenance. Apologies for the inconvenience :( \n Tracker.gg seems to be cracking down on web scraping, putting my bot out of commission. My only options are to either refactor my code and utilize a different method for gathering data, or to retire the bot. Will keep you guys updated!');
 
     });
     }
