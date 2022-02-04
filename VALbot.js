@@ -152,7 +152,7 @@ client.on('message', (message) =>{
             
         }
         else    
-        message.reply('Your profile is either private or your userName#Tag is incorrect. Please use *help to resolve this issue');
+        message.reply('Bot is under maintenance. Apologies for the inconvenience :(');
 
     });
     }
