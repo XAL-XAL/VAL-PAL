@@ -40,6 +40,7 @@ client.on('message', (message) =>{
     console.log("\n");
 
     request(`https://tracker.gg/valorant/profile/riot/${encodeURI(user_name)}%23${encodeURI(tag_number)}/overview?playlist=competitive`, function(err, resp, body){
+        console.log(resp.statusCode);
         if(!err && resp.statusCode == 200)
         {
              const $ = cheerio.load(body); 
@@ -152,7 +153,7 @@ client.on('message', (message) =>{
             
         }
         else    
-        message.reply('Bot is under maintenance. Apologies for the inconvenience :(');
+        message.reply('Bot is under maintenance. Apologies for the inconvenience :( \n Tracker.gg seems to be cracking down on web scraping, putting my bot out of commission. My only options may be to refactor my code and utilize a different method for gathering data, or to retire the bot. Will keep you guys updated!');
 
     });
     }
